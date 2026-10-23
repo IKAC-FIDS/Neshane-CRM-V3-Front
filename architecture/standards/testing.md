@@ -6,6 +6,7 @@
 - Contract tests or typed fixtures protect integration compatibility; fixtures contain no production secrets or sensitive data.
 - Test loading, empty, error, offline/timeout, cancellation, long Persian text, mixed direction, compact layout, and destructive-action safety where applicable.
 - Keep tests deterministic and user-observable. A skipped or unexecuted test is not evidence of success.
+- Report Architecture, Implementation and Production Readiness separately. Test source or documentation alone does not establish runtime or profile readiness.
 
 No test runner, browser automation, component harness, accessibility scanner, screenshot tool, or coverage threshold is approved. Codex may write required test source but must not install or execute test tools under repository policy.
 
