@@ -8,5 +8,5 @@
 - Keep tests deterministic and user-observable. A skipped or unexecuted test is not evidence of success.
 - Report Architecture, Implementation and Production Readiness separately. Test source or documentation alone does not establish runtime or profile readiness.
 
-No test runner, browser automation, component harness, accessibility scanner, screenshot tool, or coverage threshold is approved. Codex may write required test source but must not install or execute test tools under repository policy.
+No test runner, browser automation, component harness, accessibility scanner, screenshot tool, or coverage threshold is approved yet. Once a Task uses an approved/configured toolchain, Codex may resolve its controlled dependencies and execute relevant tests under `AGENTS.md`; execution does not itself approve a new tool choice or coverage policy.
 

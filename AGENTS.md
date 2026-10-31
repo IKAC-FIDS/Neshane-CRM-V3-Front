@@ -24,9 +24,11 @@
 
 Use the smallest relevant set: `.agents/skills/neshane-frontend`, `neshane-ui`, and `neshane-frontend-review`.
 
-- Codex may inspect relevant files, edit source/documentation, and write required test source.
-- Codex must not run builds, tests, applications, Docker/containers, deployments, CI/CD, commits, pushes, dependency installation, internet access, or expensive/unrelated validation.
-- Do not change Git metadata or remotes. Do not claim unexecuted verification passed.
+- An explicit Frontend development Task authorizes ordinary in-scope source/documentation edits, configured local tooling, builds, tests, application runs, debugging, defect fixes and repeated validation without per-command approval. This permission does not select a framework/tool that remains architecturally unresolved.
+- Resolve pinned or controlled dependencies only from repository-declared approved official HTTPS registries with normal TLS validation. Preserve lockfiles and integrity controls where supported; reject untrusted mirrors, arbitrary executable installers and disabled checks, and record material dependency changes.
+- Task-owned local applications and Docker containers may run for isolated smoke/integration testing using trusted base images with approved provenance/integrity controls, localhost binding by default, no production credentials/customer data, no privileged/host-network mode, no sensitive host/Docker-socket mounts, bounded resources, and cleanup limited to Task-created disposable resources.
+- Do not disable tests or weaken security/architecture checks. Commit only when the Task explicitly authorizes it. Deployment, publishing, CI/CD, push, remote infrastructure mutation, production access and release require separate authorization; do not change Git metadata/remotes without explicit scope.
+- Do not claim unexecuted verification passed or treat local evidence as Security Sign-off or Production Readiness.
 - Implementation reports are in Persian and include changed files, configuration, exact manual build/run/deployment/verification commands, and limitations.
 - Documentation-only reports must not invent those commands; report documents, approval gaps, manual review, conflicts, and the next authorized task.
 
